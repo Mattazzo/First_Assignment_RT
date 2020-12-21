@@ -29,6 +29,7 @@ rosrun assignment1 robot_controller.py
 
 ### About ROS nodes and their comunication
 - There are two nodes:
+		
 		- target_server.py	 : -It's a server which, using the service Target, gives back the coordinates of 
 								the point to be achieved by the robot
 							
