@@ -1,0 +1,25 @@
+\hypertarget{robot__controller_8py}{}\section{scripts/robot\+\_\+controller.py File Reference}
+\label{robot__controller_8py}\index{scripts/robot\+\_\+controller.\+py@{scripts/robot\+\_\+controller.\+py}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacerobot__controller}{robot\+\_\+controller}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacerobot__controller_ad432a00343321fec384e1e79b142ac5a}{robot\+\_\+controller.\+position\+Callback} (pos)
+\begin{DoxyCompactList}\small\item\em callback function after subscribing for robot position \end{DoxyCompactList}\item 
+def \hyperlink{namespacerobot__controller_accbf10a6a15201c2588764d5481947e7}{robot\+\_\+controller.\+main} ()
+\begin{DoxyCompactList}\small\item\em main function to call target service and subsrcibe for robot position \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacerobot__controller_ac9cb673d888175b8d312b09650d380c9}{robot\+\_\+controller.\+pub\+\_\+vel} = rospy.\+Publisher(\textquotesingle{}/cmd\+\_\+vel\textquotesingle{}, Twist, queue\+\_\+size=10)
+\begin{DoxyCompactList}\small\item\em publisher to publish robot velocity \end{DoxyCompactList}\item 
+\hyperlink{namespacerobot__controller_a091c74e8004fd80216a8b14f8354153d}{robot\+\_\+controller.\+client} = rospy.\+Service\+Proxy(\textquotesingle{}/\hyperlink{robot__controller_8cpp_a8a9990caf8ee110452f718bc2ee912d4}{target}\textquotesingle{},Target)
+\begin{DoxyCompactList}\small\item\em client to request a target \end{DoxyCompactList}\item 
+float \hyperlink{namespacerobot__controller_a0fff075c754060ec1d6a45e42c22bc4a}{robot\+\_\+controller.\+distance} = 1000.\+0
+\begin{DoxyCompactList}\small\item\em distance between robot and target \end{DoxyCompactList}\item 
+\hyperlink{namespacerobot__controller_af6e678d9713033f52d7fb793cc429b98}{robot\+\_\+controller.\+target} = Odometry()
+\begin{DoxyCompactList}\small\item\em target to be achieved \end{DoxyCompactList}\end{DoxyCompactItemize}

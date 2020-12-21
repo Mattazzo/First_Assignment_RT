@@ -1,0 +1,81 @@
+\hypertarget{namespacerobot__controller}{}\section{robot\+\_\+controller Namespace Reference}
+\label{namespacerobot__controller}\index{robot\+\_\+controller@{robot\+\_\+controller}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacerobot__controller_ad432a00343321fec384e1e79b142ac5a}{position\+Callback} (pos)
+\begin{DoxyCompactList}\small\item\em callback function after subscribing for robot position \end{DoxyCompactList}\item 
+def \hyperlink{namespacerobot__controller_accbf10a6a15201c2588764d5481947e7}{main} ()
+\begin{DoxyCompactList}\small\item\em main function to call target service and subsrcibe for robot position \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacerobot__controller_ac9cb673d888175b8d312b09650d380c9}{pub\+\_\+vel} = rospy.\+Publisher(\textquotesingle{}/cmd\+\_\+vel\textquotesingle{}, Twist, queue\+\_\+size=10)
+\begin{DoxyCompactList}\small\item\em publisher to publish robot velocity \end{DoxyCompactList}\item 
+\hyperlink{namespacerobot__controller_a091c74e8004fd80216a8b14f8354153d}{client} = rospy.\+Service\+Proxy(\textquotesingle{}/\hyperlink{namespacerobot__controller_af6e678d9713033f52d7fb793cc429b98}{target}\textquotesingle{},Target)
+\begin{DoxyCompactList}\small\item\em client to request a target \end{DoxyCompactList}\item 
+float \hyperlink{namespacerobot__controller_a0fff075c754060ec1d6a45e42c22bc4a}{distance} = 1000.\+0
+\begin{DoxyCompactList}\small\item\em distance between robot and target \end{DoxyCompactList}\item 
+\hyperlink{namespacerobot__controller_af6e678d9713033f52d7fb793cc429b98}{target} = Odometry()
+\begin{DoxyCompactList}\small\item\em target to be achieved \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{robot\+\_\+controller@{robot\+\_\+controller}!main@{main}}
+\index{main@{main}!robot\+\_\+controller@{robot\+\_\+controller}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}def robot\+\_\+controller.\+main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerobot__controller_accbf10a6a15201c2588764d5481947e7}{}\label{namespacerobot__controller_accbf10a6a15201c2588764d5481947e7}
+
+
+main function to call target service and subsrcibe for robot position 
+
+\index{robot\+\_\+controller@{robot\+\_\+controller}!position\+Callback@{position\+Callback}}
+\index{position\+Callback@{position\+Callback}!robot\+\_\+controller@{robot\+\_\+controller}}
+\subsubsection[{\texorpdfstring{position\+Callback(pos)}{positionCallback(pos)}}]{\setlength{\rightskip}{0pt plus 5cm}def robot\+\_\+controller.\+position\+Callback (
+\begin{DoxyParamCaption}
+\item[{}]{pos}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacerobot__controller_ad432a00343321fec384e1e79b142ac5a}{}\label{namespacerobot__controller_ad432a00343321fec384e1e79b142ac5a}
+
+
+callback function after subscribing for robot position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The position of robot subscribed from world \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\index{robot\+\_\+controller@{robot\+\_\+controller}!client@{client}}
+\index{client@{client}!robot\+\_\+controller@{robot\+\_\+controller}}
+\subsubsection[{\texorpdfstring{client}{client}}]{\setlength{\rightskip}{0pt plus 5cm}robot\+\_\+controller.\+client = rospy.\+Service\+Proxy(\textquotesingle{}/{\bf target}\textquotesingle{},Target)}\hypertarget{namespacerobot__controller_a091c74e8004fd80216a8b14f8354153d}{}\label{namespacerobot__controller_a091c74e8004fd80216a8b14f8354153d}
+
+
+client to request a target 
+
+\index{robot\+\_\+controller@{robot\+\_\+controller}!distance@{distance}}
+\index{distance@{distance}!robot\+\_\+controller@{robot\+\_\+controller}}
+\subsubsection[{\texorpdfstring{distance}{distance}}]{\setlength{\rightskip}{0pt plus 5cm}float robot\+\_\+controller.\+distance = 1000.\+0}\hypertarget{namespacerobot__controller_a0fff075c754060ec1d6a45e42c22bc4a}{}\label{namespacerobot__controller_a0fff075c754060ec1d6a45e42c22bc4a}
+
+
+distance between robot and target 
+
+\index{robot\+\_\+controller@{robot\+\_\+controller}!pub\+\_\+vel@{pub\+\_\+vel}}
+\index{pub\+\_\+vel@{pub\+\_\+vel}!robot\+\_\+controller@{robot\+\_\+controller}}
+\subsubsection[{\texorpdfstring{pub\+\_\+vel}{pub_vel}}]{\setlength{\rightskip}{0pt plus 5cm}robot\+\_\+controller.\+pub\+\_\+vel = rospy.\+Publisher(\textquotesingle{}/cmd\+\_\+vel\textquotesingle{}, Twist, queue\+\_\+size=10)}\hypertarget{namespacerobot__controller_ac9cb673d888175b8d312b09650d380c9}{}\label{namespacerobot__controller_ac9cb673d888175b8d312b09650d380c9}
+
+
+publisher to publish robot velocity 
+
+\index{robot\+\_\+controller@{robot\+\_\+controller}!target@{target}}
+\index{target@{target}!robot\+\_\+controller@{robot\+\_\+controller}}
+\subsubsection[{\texorpdfstring{target}{target}}]{\setlength{\rightskip}{0pt plus 5cm}robot\+\_\+controller.\+target = Odometry()}\hypertarget{namespacerobot__controller_af6e678d9713033f52d7fb793cc429b98}{}\label{namespacerobot__controller_af6e678d9713033f52d7fb793cc429b98}
+
+
+target to be achieved 
+
