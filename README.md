@@ -50,7 +50,9 @@ rosrun assignment1 robot_controller.py
 
 ### Custom messages or services used
 -No custom messages are used
+
 -Just one custom service is used:
+
 		-Target.srv: stored in srv folder, it requires two float number(minimum,maximum) as request and 
 			     gives back two float numbers(x,y) as response.
 			     Minimum and maximum represent the the extremity of the range in which x and y are 
