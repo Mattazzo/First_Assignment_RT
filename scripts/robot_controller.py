@@ -9,7 +9,7 @@ import rospy
 import random
 import math
 import time
-from assignment1.srv import Target,TargetResponse
+from assignment1.srv import Target
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Twist
 
