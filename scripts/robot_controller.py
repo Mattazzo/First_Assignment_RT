@@ -29,8 +29,6 @@ target = Odometry()
 # @param pos The position of robot subscribed from world
 def positionCallback(pos):
 	
-	rospy.loginfo("Robot position @[%f,%f]", pos.pose.pose.position.x, pos.pose.pose.position.y)
-	
 	#calculate distance between robot and target
 	distance = math.sqrt(pow(target.pose.pose.position.x - pos.pose.pose.position.x,2) + 
 						 pow(target.pose.pose.position.y - pos.pose.pose.position.y,2))
@@ -45,6 +43,7 @@ def positionCallback(pos):
 		pub_vel.publish(vel)
 	else:
 		#target achieved, ask for a new target
+		rospy.loginfo("Target reached\n")
 		response = client(-6.0,6.0)
 		target.pose.pose.position.x = response.x
 		target.pose.pose.position.y = response.y
